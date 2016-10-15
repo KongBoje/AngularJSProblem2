@@ -1,0 +1,39 @@
+<div class="container">
+    <p>Add your Form here</p>
+    <div class="col-md-4" style="border: thin lightblue solid; border-radius: 5px;padding: 1em;">
+
+        <form>
+            <label>ID</label><br>
+            <fieldset class="form-group">
+                <input type="text" name="id" ng-model="newcar.id" ng-init="null" class="form-control" disabled/><br>
+            </fieldset>
+            <fieldset class="form-group">
+                <label>Year</label><br>
+                <input type="text" name="year" ng-model="newcar.year" class="form-control"/><br>
+            </fieldset>
+            <fieldset class="form-group">
+                <label>Registered</label><br>
+                <input type="text" name="registered" ng-model="newcar.registered" class="form-control"/><br>
+            </fieldset>
+            <fieldset class="form-group">
+                <label>Make</label><br>
+                <input type="text" name="make" ng-model="newcar.make" class="form-control"/><br>
+            </fieldset>
+            <fieldset class="form-group">
+                <label>Model</label><br>
+                <input type="text" name="model" ng-model="newcar.model" class="form-control"/><br>
+            </fieldset>
+            <fieldset class="form-group">
+                <label>Description</label><br>
+                <input type="text" name="description" ng-model="newcar.description" class="form-control"/><br>
+            </fieldset>
+            <fieldset class="form-group">
+                <label>Price</label><br>
+                <input type="text" name="price" ng-model="newcar.price" class="form-control"/><br>
+            </fieldset>
+            <fieldset class="form-group">
+                <input type="button" value="save" class="btn btn-primary pull-left" ng-click="addEditCar(newcar); newcar = null; newcar.id = null"/>
+            </fieldset>
+        </form>
+    </div>
+</div>
